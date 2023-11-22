@@ -10,7 +10,16 @@ namespace Element
         public string discord;
         public string inGame;
         public float score;
-        public Team team;
+        public string team;
+
+        public Player(string playerName, string discord, string inGame, float score, string team)
+        {
+            this.playerName = playerName;
+            this.discord = discord;
+            this.inGame = inGame;
+            this.score = score;
+            this.team = team;
+        }
     }
 }
 

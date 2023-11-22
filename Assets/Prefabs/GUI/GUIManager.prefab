@@ -1,5 +1,97 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &155206212347043195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4876348500374861554}
+  - component: {fileID: 4394844477251803109}
+  - component: {fileID: 4938930593572538608}
+  m_Layer: 0
+  m_Name: UI Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4876348500374861554
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155206212347043195}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4862293289747267095}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &4394844477251803109
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155206212347043195}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.2272161, g: 0.41034272, b: 0.6981132, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &4938930593572538608
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155206212347043195}
+  m_Enabled: 1
 --- !u!1 &323519405736038321
 GameObject:
   m_ObjectHideFlags: 0
@@ -47,7 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
-  m_DragThreshold: 10
+  m_DragThreshold: 2
 --- !u!114 &6806045209627014196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,6 +160,77 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
+--- !u!1 &939024803254039967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 767404893030474248}
+  - component: {fileID: 7102002186705559711}
+  m_Layer: 0
+  m_Name: UIMarketHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &767404893030474248
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939024803254039967}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4862293289747267095}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7102002186705559711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939024803254039967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4682de416fbfe204597547e8205838ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guiPrefabObj: {fileID: 4576424455679397110, guid: e5afbad4802d3bc4398ee53f8a055144, type: 3}
+  processBackKey: 1
+  guiName: UIMarket
+  guiCamera: {fileID: 4394844477251803109}
+  guiAnimType: 0
+  showAnim: 0
+  showCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hideAnim: 0
+  hideCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  showAnimClip: {fileID: 0}
+  hideAnimClip: {fileID: 0}
+  hideAction: 0
+  status: 0
+  guiObject: {fileID: 0}
+  gui: {fileID: 0}
+  guiCanvas: {fileID: 0}
+  rootGUI: {fileID: 0}
 --- !u!1 &6683651503885020070
 GameObject:
   m_ObjectHideFlags: 0
@@ -78,6 +241,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4862293289747267095}
   - component: {fileID: 2125323554147352017}
+  - component: {fileID: 1454906679407360892}
   m_Layer: 0
   m_Name: GUIManager
   m_TagString: Untagged
@@ -98,8 +262,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 4876348500374861554}
   - {fileID: 1158859530107283708}
   - {fileID: 1568373252946906417}
+  - {fileID: 767404893030474248}
+  - {fileID: 126186514197966920}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2125323554147352017
@@ -114,7 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 319ef02a20fde1a4b8d04290a1bb91e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guiCamera: {fileID: 0}
+  guiCamera: {fileID: 4394844477251803109}
   eventSystem: {fileID: 2518711103477447567}
   listHandler:
   - {fileID: 2960383883086574795}
@@ -127,6 +294,89 @@ MonoBehaviour:
   template: {fileID: 0}
   loadAll: 0
   unloadAll: 0
+--- !u!114 &1454906679407360892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6683651503885020070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bdbe93cdb44cc4448c2758ffaf98d9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &7262791632835861041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 126186514197966920}
+  - component: {fileID: 7077488187270994342}
+  m_Layer: 0
+  m_Name: UICustomMatchHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &126186514197966920
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7262791632835861041}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4862293289747267095}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7077488187270994342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7262791632835861041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42446fa93e351424f8fcccaa691128d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guiPrefabObj: {fileID: 2159372887194083987, guid: ed4212fa65e50eb42a1642477e9f0dd3, type: 3}
+  processBackKey: 1
+  guiName: UICustomMatch
+  guiCamera: {fileID: 4394844477251803109}
+  guiAnimType: 0
+  showAnim: 0
+  showCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hideAnim: 0
+  hideCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  showAnimClip: {fileID: 0}
+  hideAnimClip: {fileID: 0}
+  hideAction: 0
+  status: 0
+  guiObject: {fileID: 0}
+  gui: {fileID: 0}
+  guiCanvas: {fileID: 0}
+  rootGUI: {fileID: 0}
 --- !u!1 &7347259452116003897
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,7 +424,7 @@ MonoBehaviour:
   guiPrefabObj: {fileID: 9144969057289860821, guid: faad55f88a938534e914e179422c2a5e, type: 3}
   processBackKey: 1
   guiName: UIHome
-  guiCamera: {fileID: 0}
+  guiCamera: {fileID: 4394844477251803109}
   guiAnimType: 0
   showAnim: 0
   showCurve:

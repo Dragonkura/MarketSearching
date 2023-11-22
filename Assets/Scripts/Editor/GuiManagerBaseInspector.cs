@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using System;
 using Amanotes.Utils;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GFramework.GUI
 {
@@ -67,6 +68,12 @@ namespace GFramework.GUI
                     CreateNewGUIObject(myScript);
 #pragma warning restore CS0612 // Type or member is obsolete
                 }
+
+                //if (GUILayout.Button("Update GUI Name"))
+                //{
+                //    UpdateGUIName(myScript);
+                //}
+
             }
 
             GUILayout.Label("____________________________", EditorStyles.largeLabel);
@@ -460,7 +467,27 @@ namespace GFramework.GUI
                 Debug.LogError("Error:" + ex.Message);
             }
         }
-
+        ////Update GUIName
+        //public void UpdateGUIName(GUIManagerBase guiManager)
+        //{
+        //    //if(true)
+        //    string path = "Assets/Scripts/GUI/GUIName.cs";
+        //    string[] text = null;
+        //    try
+        //    {
+        //        text = File.ReadAllLines(path);
+        //        var list = text.ToList();
+        //        list.RemoveAt(list.Count - 1);
+        //        list.Add($"\tpublic static readonly string GUI_{guiManager.newGuiName} = \"{guiManager.newGuiName}\";");
+        //        list.Add("}");
+        //        text = list.ToArray();
+        //        File.WriteAllLines(path, text);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Debug.LogError("Error:" + ex.Message);
+        //    }
+        //}
         //Create GUI Handler Script
         public void CreateGUIHandlerScript(GUIManagerBase guiManager)
         {
